@@ -62,7 +62,6 @@
     * [istio-cni](6/7.md)
     * [证书控制器chiron](6/8.md)
     * [istio ca控制器](6/9.md)
-    * [tls peer验证原理](6/10.md)
     * [sidecar 注入原理](6/11.md)
     * [初始化webhook 原理](6/12.md)
     * [webhook 配置校验](6/13.md)
