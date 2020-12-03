@@ -1,0 +1,46 @@
+{
+  "plugins":[
+    "expandable-chapters",
+    "simple-page-toc",
+    "-sharing",
+    "-highlight",
+    "sharing-plus",
+    "expandable-chapters-small",
+    "copy-code-button"
+  ],
+  "pluginsConfig": {
+    "sharing": {
+      "qq": true,
+      "whatsapp": false,
+      "all": [
+        "facebook", "google", "twitter",
+        "weibo", "instapaper", "linkedin",
+        "pocket", "stumbleupon"
+      ]
+    },
+    "simple-page-toc": {
+      "maxDepth": 3,
+      "skipFirstH1": true
+    },
+    "autocover": {
+      "title": "My Book",
+      "author": "Author",
+      "pluginsConfig": {
+        "autocover": {
+          "font": {
+            "size": null,
+            "family": "Impact",
+            "color": "#FFF"
+          },
+          "size": {
+            "w": 1800,
+            "h": 2360
+          },
+          "background": {
+            "color": "#09F"
+          }
+        }
+      }
+    }
+  }
+}
