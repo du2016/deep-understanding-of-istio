@@ -24,13 +24,13 @@ virtualservices.networking.istio.io        2020-10-30T08:20:43Z
 workloadentries.networking.istio.io        2020-10-30T08:20:43Z
 ```
 
-- destinationrules 发生路由后应用于服务流量的策略，决定了cluster和endpoint配置
+- destinationrules 发生路由后应用于服务流量的策略,决定了cluster和endpoint配置
 - envoyfilters 提供了一种机制来自定义Istio Pilot生成的Envoy配置
-- gateways  Gateway描述了在网格边缘运行的负载均衡器，用于接收传入或传出的HTTP/TCP连接
-- virtualservices 影响流量路由的配置，定义了一个域名的具体配置
+- gateways  Gateway描述了在网格边缘运行的负载均衡器,用于接收传入或传出的HTTP/TCP连接
+- virtualservices 影响流量路由的配置,定义了一个域名的具体配置
 - workloadentries 描述单个非Kubernetes工作负载(如VM或裸机服务器)的属性
-- serviceentries 将额外条目添加到Istio的内部service registry中，以便网格中自动发现的服务可以访问/路由到这些手动指定的服务
-- sidecars 描述了sidecar代理的配置，该代理将入站和出站通信调解到它所连接的工作负载实例
+- serviceentries 将额外条目添加到Istio的内部service registry中,以便网格中自动发现的服务可以访问/路由到这些手动指定的服务
+- sidecars 描述了sidecar代理的配置,该代理将入站和出站通信调解到它所连接的工作负载实例
 
 - peerauthentications 定义流量如何通过穿透到(或不穿透)到sidecar
 - requestauthentications 定义工作负载支持哪些请求身份验证方法
