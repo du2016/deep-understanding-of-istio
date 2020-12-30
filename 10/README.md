@@ -1,7 +1,8 @@
 # 数据结构
 
 - DiscoveryServer
+- SDS Server
 - Multicluster
-- ConfigStoreCache
-- ServiceEntryStore
-  ServiceEntryStore与ServiceEntry CRD通信并监视更改
+- ConfigStore
+- ServiceDiscovery
+- CAServer
