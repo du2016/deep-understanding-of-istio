@@ -16,9 +16,9 @@ Envoy可与任何应用程序语言一起使用。单个Envoy部署可以在Java
 
 任何使用大型面向服务的体系结构的人都知道，部署库升级可能会非常痛苦。Envoy可以透明地在整个基础架构中快速部署和升级。
 
-L3 / L4过滤器体系结构： Envoy是L3 / L4网络代理。可插入的 过滤器链机制允许编写过滤器以执行不同的TCP / UDP代理任务，并将其插入主服务器。已经编写了过滤器来支持各种任务，例如原始TCP代理，UDP代理，HTTP代理，TLS客户端证书认证，Redis， MongoDB，Postgres等。
+L3 / L4 filter体系结构： Envoy是L3 / L4网络代理。可插入的 filter chains机制允许编写 filter以执行不同的TCP / UDP代理任务，并将其插入主服务器。已经编写了 filter来支持各种任务，例如原始TCP代理，UDP代理，HTTP代理，TLS客户端证书认证，Redis， MongoDB，Postgres等。
 
-HTTP L7筛选器体系结构： HTTP是现代应用程序体系结构的关键组成部分，Envoy支持附加的HTTP L7筛选器层。可以将HTTP筛选器插入HTTP连接管理子系统，该子系统执行不同的任务，例如缓冲，速率限制，路由/转发，嗅探Amazon的DynamoDB等。
+HTTP L7 filter体系结构： HTTP是现代应用程序体系结构的关键组成部分，Envoy支持附加的HTTP L7 filter layer。可以将HTTP filter插入HTTP连接管理子系统，该子系统执行不同的任务，例如缓冲，速率限制，路由/转发，嗅探Amazon的DynamoDB等。
 
 一流的HTTP / 2支持：在HTTP模式下运行时，Envoy支持HTTP / 1.1和HTTP / 2。Envoy可以在两个方向上充当透明的HTTP / 1.1到HTTP / 2代理。这意味着可以桥接HTTP / 1.1和HTTP / 2客户端与目标服务器的任何组合。推荐的服务到服务配置使用所有Envoy之间的HTTP / 2创建持久连接的网格，可以在请求和响应之间进行多路复用。
 
@@ -47,7 +47,7 @@ gRPC支持： gRPC是Google的RPC框架，使用HTTP / 2作为基础的多路复
 
 上游：上游主机从Envoy接收连接和请求，并返回响应。
 
-侦听器：侦听器是可以由下游客户端连接到的命名网络位置（例如，端口，Unix域套接字等）。Envoy公开了下游主机连接到的一个或多个侦听器。
+listener：listener是可以由下游客户端连接到的命名网络位置（例如，端口，Unix域套接字等）。Envoy公开了下游主机连接到的一个或多个listener。
 
 群集：群集是Envoy连接到的一组逻辑相似的上游主机。Envoy通过服务发现来发现集群的成员。它可以选择通过主动运行状况检查来确定集群成员的运行状况。Envoy将请求路由到的群集成员由负载平衡策略确定。
 
